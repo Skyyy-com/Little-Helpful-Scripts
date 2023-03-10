@@ -1,0 +1,3 @@
+#!/bin/sh
+
+TZ='Europe/Bucharest' date '+%X'

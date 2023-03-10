@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#groff -ms groff.ms -T html > groff.html
+
+echo "filename:"
+read NAME
+
+echo "filetype:"
+read TYPE
+
+ORINAME=$NAME
+
+NAME="$NAME.ms"
+
+groff -ms $NAME -T $TYPE > $ORINAME.$TYPE
