@@ -2,8 +2,8 @@
 
 CHOICES=("EMAIL" "USER" "ASCII")
 
-EMAILS=("xxx" "yyy" "zzz")
-USERS=("Skyyy-com" "xxx")
+EMAILS=("skylarvaughn@gmail.com" "skylarvaughnhodges@chis.edu.my" "joebidenhistime420@gmail.com" "RatsAteMyDad@gmail.com" "ananseSpiderman26@gmail.com" "baronVonJazz@gmail.com")
+USERS=("Skyyy-com" "skylarv11")
 ASCII=("®" "±" "µ" "©" "§" "™" "†" "›" "—" "✓" "Â" "Ã" "Î" "â" "î" "¿" "ă" "ș" "ț" "↔" "↮" "Δ")
 
 CHOICE=$(printf '%s\n' "${CHOICES[@]}" | dmenu -i -nf violet -nb black -sb violet -sf black -l 5)

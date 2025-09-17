@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "URL:"
+read URL
+
+yt-dlp  $URL --ignore-errors --extract-audio --audio-format m4a --parse-metadata "playlist_index:%(track_number)s" --add-metadata --postprocessor-args "-metadata date='${year}' -metadata artist=\"${artist}\" -metadata album_artist=\"${artist}\"" --embed-thumbnail --convert-thumbnail jpg --ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -o "~/Music/%(title)s%(artist)s.%(ext)s"
+
+rmpc update
